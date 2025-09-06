@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ตาราง EXP Glass UI</title>
+<style>
+  /* พื้นหลังหน้าเว็บ */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://i.ibb.co/fVX2Q280/IMG-2256.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* กล่องตารางแบบ Glass */
+  .table-container {
+    width: 95%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: center;
+  }
+
+  th {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  tbody tr {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    transition: transform 0.3s, background 0.3s;
+  }
+
+  tbody tr:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid rgba(255,255,255,0.5);
+  }
+
+  td.name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  td.exp {
+    font-weight: bold;
+    color: #00ffd5;
+  }
+
+  td.rank {
+    font-weight: bold;
+    color: #ff6f61;
+  }
+
+  /* Responsive สำหรับมือถือ */
+  @media (max-width: 600px) {
+    td img {
+      width: 40px;
+      height: 40px;
+    }
+    th, td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ผู้เล่น</th>
+        <th>EXP</th>
+        <th>แรงค์</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="name"><img src="https://i.ibb.co/Q3pSpPZg/IMG-2255.jpg" alt="SUNDAY">SunnyShop 24/7</td>
+        <td class="exp">14689</td>
+        <td class="rank">Rank:SSS</td>
+      </tr>
+      <tr>
+        <td class="name"><img src="https://i.ibb.co/NnZSxWhv/Shiina-Mahiru-Otonari-no-Tenshi-sama2.jpg" alt="PLAYER2">Miyu</td>
+        <td class="exp">15</td>
+        <td class="rank">Rank:E</td>
+      </tr>
+      <tr>
+        <td class="name"><img src="https://i.ibb.co/xSq8wqS3/bfe6440018227f922c836d4b935f4a53.jpg" alt="PLAYER3">มะแม้วมุมิ้</td>
+        <td class="exp">10</td>
+        <td class="rank">Rank:F</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
